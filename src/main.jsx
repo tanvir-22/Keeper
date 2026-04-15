@@ -3,11 +3,14 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import router from './Router/router'
 import { RouterProvider } from 'react-router'
+import ListProvider from './Context/ListProvider'
 
 createRoot(document.getElementById('root')).render(
  
-  <RouterProvider router={router}>
+  <ListProvider>
+    <RouterProvider router={router}>
 
   </RouterProvider>
+  </ListProvider>
  
 )

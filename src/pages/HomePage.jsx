@@ -7,7 +7,13 @@ const HomePage = () => {
   return (
     <div>
       <Banner/>
-      <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
+      <Suspense fallback={
+        <div className='flex items-center justify-center py-4'>
+          <span className="loading loading-spinner loading-xl">
+          
+        </span>
+        </div>
+        }>
       <HomeSection friendsPromise={friendsPromise} />
       </Suspense>
     </div>

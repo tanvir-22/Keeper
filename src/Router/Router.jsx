@@ -2,6 +2,9 @@ import Layout from "../Layout/Layout";
 import HomePage from "../pages/HomePage";
 import { createBrowserRouter } from "react-router";
 import Details from "../components/Details";
+import TimeLine from "../components/TimeLineCard"
+import TimePage from "../pages/TimePage";
+import Error from "../Error";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,9 +18,13 @@ const router = createBrowserRouter([
           const res = await fetch(`/friends.json`);
           return res.json()},
         Component:Details,
+      },{
+        path:"/timeline",
+        Component:TimePage
       }
       
-        ]
+        ],
+        errorElement:<Error/>
   },
 
 ]);
