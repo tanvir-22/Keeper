@@ -21,7 +21,7 @@ const HomeSection = ({friendsPromise}) => {
     return (
         <div className='bg-[#f7fafc] py-10'>
             <div className='w-[80%] mx-auto '>
-                <div className='grid grid-cols-4 gap-7 p-5'>
+                <div className='grid grid-cols-1 md:grid-cols-4 gap-7 p-5'>
                     <StatCard title={"Total Friends"} len={data.length}/>
                     <StatCard title={"On Track"} len={getLen("on_track")}/>
                     <StatCard title={"Need Attention"} len={getLen("overdue")}/>
@@ -32,7 +32,7 @@ const HomeSection = ({friendsPromise}) => {
 
                 </div>
 
-                <div className='grid grid-cols-4 gap-5'>
+                <div className='grid grid-cols-1  md:grid-cols-4 gap-5'>
                    {
                      data.map((item)=>(
                         <FriendsCard item={item}/>
