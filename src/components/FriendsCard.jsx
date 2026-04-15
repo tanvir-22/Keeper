@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { use } from 'react'
+import { Link } from 'react-router'
 
-const FriendsCard = () => {
+const FriendsCard = ({item}) => {
+  
   return (
-    <div className='bg-white shadow-md flex flex-col items-center p-5 gap-3 rounded-md'>
-        <img className='w-20 h-20 object-cover rounded-full ' src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="" />
+    <Link to={`/friendsDetails/${item.id}`} className='bg-white shadow-md flex flex-col items-center p-5 gap-3 rounded-md'>
+        <img className='w-20 h-20 object-cover rounded-full ' src={item.picture} alt="" />
 
-        <h1>David kim</h1>
-        <p>62d ago</p>
+        <h1>{item.name}</h1>
+        <p>{item.days_since_contact}d ago</p>
         
-        <p className='badge badge-success'>Work</p>
-        <p className='badge badge-error'>Almost Due</p>
-    </div>
+        
+        
+       <div className='flex gap-3'>
+         {
+          item.tags.map((tag)=>(
+            <p className='badge badge-soft badge-success'>{tag}</p>
+          ))
+        }
+       </div>
+       <p>{item.status}</p>
+    </Link>
   )
 }
 
