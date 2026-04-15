@@ -5,6 +5,7 @@ import Details from "../components/Details";
 import TimeLine from "../components/TimeLineCard"
 import TimePage from "../pages/TimePage";
 import Error from "../Error";
+import Stat from "../components/Stat";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,6 +22,9 @@ const router = createBrowserRouter([
       },{
         path:"/timeline",
         Component:TimePage
+      },{
+        path:"/stats",
+        Component:Stat
       }
       
         ],
