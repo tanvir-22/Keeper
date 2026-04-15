@@ -4,13 +4,14 @@ import './index.css'
 import router from './Router/router'
 import { RouterProvider } from 'react-router'
 import ListProvider from './Context/ListProvider'
-
+import { ToastContainer } from 'react-toastify'
 createRoot(document.getElementById('root')).render(
  
   <ListProvider>
     <RouterProvider router={router}>
-
+  
   </RouterProvider>
+     <ToastContainer />
   </ListProvider>
  
 )
