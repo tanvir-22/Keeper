@@ -1,4 +1,4 @@
-# 🤝 Friend Tracker
+# 🤝 Keen Keeper
 
 A modern, responsive relationship management app built with React and Tailwind CSS. We all have people in our lives we genuinely care about — old college friends, mentors, childhood buddies — but life gets busy and weeks turn into months without a single message. Friend Tracker solves that. It lets you set a contact goal for each friend, tracks how many days have passed since your last interaction, and tells you exactly who needs your attention today. Log a quick call, text, or video chat from the app, watch it appear on your personal timeline, and never let an important relationship go quiet again.
 
