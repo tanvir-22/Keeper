@@ -68,7 +68,7 @@ const Details = () => {
                             <h1  className='text-center'>Relationship Goal</h1>
                             <button className='btn py-1'>Edit</button>
                         </div>
-                        <p className='text-[#64748B] text-center py-1'>Connect every <span className='font-semibold'>{item.goal} days</span></p>
+                        <p className='text-[#64748B] text-center md:text-start  py-1'>Connect every <span className='font-semibold'>{item.goal} days</span></p>
                     </div>
                     <div className='bg-white my-2 col-span-3 p-4'>
 
